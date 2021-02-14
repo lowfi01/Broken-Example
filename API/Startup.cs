@@ -18,12 +18,13 @@ namespace API
     {
         public Startup(IConfiguration configuration)
         {
+            // We inject configuration into our project to give us access to appsettings.Development.json etc..
             Configuration = configuration;
         }
 
         public IConfiguration Configuration { get; }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
+        // This method gets called by the runtime. Use this method to add services to the container (dependency injection container).
         public void ConfigureServices(IServiceCollection services)
         {
 
@@ -44,7 +45,7 @@ namespace API
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "API v1"));
             }
 
-            app.UseHttpsRedirection();
+            // app.UseHttpsRedirection();
 
             app.UseRouting();
 
