@@ -14,7 +14,7 @@ namespace API
 {
   public class Program
   {
-    public static void Main(string[] args)
+    public static async Task Main(string[] args)
     {
       var host = CreateHostBuilder(args).Build();
 
@@ -25,7 +25,8 @@ namespace API
       try
       {
         var context = services.GetRequiredService<DataContext>();
-        context.Database.Migrate(); // Apply latest migration if they do not exist
+        await context.Database.MigrateAsync(); // Apply latest migration if they do not exist
+        await Seed.SeedData(context);// run seed method
       }
       catch (Exception ex)
       {
@@ -33,7 +34,7 @@ namespace API
         logger.LogError(ex, "An error occured during migration (program.cs) initial migration get service pattern");
       }
 
-      host.Run(); // this runs the application
+      await host.RunAsync(); // this runs the application
     }
 
     public static IHostBuilder CreateHostBuilder(string[] args) =>
