@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "nYxHD+/WKn57l+0xQrXp+t8pBnwStSd4bnJCn5hi9r+oD9vHx7QrCq/PNjUFfgZ5+U8sPRb6L4ppkwIOC2j5QQ==",
+  "dgSpecHash": "/OB0lmugAeXO25kush7K4RbABnKkeavfjERlCzpbSEgNigjL6zm4sl4CvwQXmWhTldvBGPUPa5/PRuWSHbbi8Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\james\\Documents\\Programming\\mixed-projects\\Reactivities\\Application\\Application.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\james\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
+    "C:\\Users\\james\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\9.0.0\\mediatr.extensions.microsoft.dependencyinjection.9.0.0.nupkg.sha512",
     "C:\\Users\\james\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\james\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",
     "C:\\Users\\james\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.0.1\\microsoft.data.sqlclient.sni.runtime.2.0.1.nupkg.sha512",

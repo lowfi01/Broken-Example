@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "z0q045+JqhikflrZZR3u0vpCHe2mXLvuudlGuDgJQKT8+dUo8m2xmQr86SP0pmrM0gf6XLZq4bgKLwsYxAEeTQ==",
+  "dgSpecHash": "xXbAduBfkarNUhNWgfWyRbV1MP6R5e7KWyccWCjyLKskEVWNg0MQb87JRCeEY1/obj2kqR06wE7DWF2DShPd0Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\james\\Documents\\Programming\\mixed-projects\\Reactivities\\API\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\james\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
+    "C:\\Users\\james\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
+    "C:\\Users\\james\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\9.0.0\\mediatr.extensions.microsoft.dependencyinjection.9.0.0.nupkg.sha512",
     "C:\\Users\\james\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\james\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",
     "C:\\Users\\james\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.0.1\\microsoft.data.sqlclient.sni.runtime.2.0.1.nupkg.sha512",
