@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using API.Extensions;
 using Application.Activities;
 using Application.Core;
 using MediatR;
@@ -32,29 +33,10 @@ namespace API
     // This method gets called by the runtime. Use this method to add services to the container (dependency injection container).
     public void ConfigureServices(IServiceCollection services)
     {
-
       services.AddControllers();
-      services.AddSwaggerGen(c =>
-      {
-        c.SwaggerDoc("v1", new OpenApiInfo { Title = "API", Version = "v1" });
-      });
 
-      services.AddDbContext<DataContext>(options =>
-      {
-        options.UseSqlServer(_config.GetConnectionString("DefaultConnection"));
-      });
-
-      services.AddCors(opt =>
-      {
-        opt.AddPolicy("CorsPolicy", policy =>
-        {
-          policy.AllowAnyMethod().AllowAnyHeader().WithOrigins("http://localhost:3000"); // required when access resource from a different domain
-        });
-      });
-
-      services.AddMediatR(typeof(List.Handler).Assembly); // point mediator where handlers live in application layer
-      services.AddAutoMapper(typeof(MappingProfiles).Assembly);
-
+      // add extensions method to reduce code bloat
+      services.AddApplicationServices(_config);
     }
 
     // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
