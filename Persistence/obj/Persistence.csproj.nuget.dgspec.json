@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\james\\Documents\\Programming\\mixed-projects\\Reactivities\\Persistence\\Persistence.csproj": {}
+    "c:\\Users\\james\\Documents\\Programming\\mixed-projects\\Reactivities\\Persistence\\Persistence.csproj": {}
   },
   "projects": {
-    "C:\\Users\\james\\Documents\\Programming\\mixed-projects\\Reactivities\\Domain\\Domain.csproj": {
+    "c:\\Users\\james\\Documents\\Programming\\mixed-projects\\Reactivities\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\james\\Documents\\Programming\\mixed-projects\\Reactivities\\Domain\\Domain.csproj",
+        "projectUniqueName": "c:\\Users\\james\\Documents\\Programming\\mixed-projects\\Reactivities\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\james\\Documents\\Programming\\mixed-projects\\Reactivities\\Domain\\Domain.csproj",
+        "projectPath": "c:\\Users\\james\\Documents\\Programming\\mixed-projects\\Reactivities\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\james\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\james\\Documents\\Programming\\mixed-projects\\Reactivities\\Domain\\obj\\",
+        "outputPath": "c:\\Users\\james\\Documents\\Programming\\mixed-projects\\Reactivities\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\james\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -58,14 +58,14 @@
         }
       }
     },
-    "C:\\Users\\james\\Documents\\Programming\\mixed-projects\\Reactivities\\Persistence\\Persistence.csproj": {
+    "c:\\Users\\james\\Documents\\Programming\\mixed-projects\\Reactivities\\Persistence\\Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\james\\Documents\\Programming\\mixed-projects\\Reactivities\\Persistence\\Persistence.csproj",
+        "projectUniqueName": "c:\\Users\\james\\Documents\\Programming\\mixed-projects\\Reactivities\\Persistence\\Persistence.csproj",
         "projectName": "Persistence",
-        "projectPath": "C:\\Users\\james\\Documents\\Programming\\mixed-projects\\Reactivities\\Persistence\\Persistence.csproj",
+        "projectPath": "c:\\Users\\james\\Documents\\Programming\\mixed-projects\\Reactivities\\Persistence\\Persistence.csproj",
         "packagesPath": "C:\\Users\\james\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\james\\Documents\\Programming\\mixed-projects\\Reactivities\\Persistence\\obj\\",
+        "outputPath": "c:\\Users\\james\\Documents\\Programming\\mixed-projects\\Reactivities\\Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\james\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -82,8 +82,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\james\\Documents\\Programming\\mixed-projects\\Reactivities\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\james\\Documents\\Programming\\mixed-projects\\Reactivities\\Domain\\Domain.csproj"
+              "c:\\Users\\james\\Documents\\Programming\\mixed-projects\\Reactivities\\Domain\\Domain.csproj": {
+                "projectPath": "c:\\Users\\james\\Documents\\Programming\\mixed-projects\\Reactivities\\Domain\\Domain.csproj"
               }
             }
           }
