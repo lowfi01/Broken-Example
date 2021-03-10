@@ -1,3 +1,4 @@
+using System;
 using System.Text;
 using API.Services;
 using Domain;
@@ -30,7 +31,9 @@ namespace API.Extensions
             ValidateIssuerSigningKey = true,
             IssuerSigningKey = key,
             ValidateIssuer = false,
-            ValidateAudience = false
+            ValidateAudience = false,
+            ValidateLifetime = true, // 5 min lifetime validation
+            ClockSkew = TimeSpan.Zero // remove the 5 minute lifetime validation
           };
         });
 
