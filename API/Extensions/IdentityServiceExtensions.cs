@@ -16,8 +16,9 @@ namespace API.Extensions
     public static IServiceCollection AddIdentityServices(this IServiceCollection services, IConfiguration config)
     {
       services.AddIdentityCore<AppUser>(opt =>
-        opt.Password.RequireNonAlphanumeric = false
-      )
+      {
+        opt.Password.RequireNonAlphanumeric = false;
+      })
       .AddEntityFrameworkStores<DataContext>()
       .AddSignInManager<SignInManager<AppUser>>();
 

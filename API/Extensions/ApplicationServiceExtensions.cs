@@ -27,7 +27,12 @@ namespace API.Extensions
       {
         opt.AddPolicy("CorsPolicy", policy =>
         {
-          policy.AllowAnyMethod().AllowAnyHeader().WithOrigins("http://localhost:3000"); // required when access resource from a different domain
+          policy
+            .AllowAnyMethod()
+            .AllowAnyHeader()
+            .AllowCredentials()
+            .WithExposedHeaders("WWW-Authenticate") // expose header so client can understand when too log user out
+            .WithOrigins("http://localhost:3000"); // required when access resource from a different domain
         });
       });
 
