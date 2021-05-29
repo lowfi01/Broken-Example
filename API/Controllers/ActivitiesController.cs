@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers
 {
+  [AllowAnonymous]
   public class ActivitiesController : BaseApiController
   {
 
@@ -18,7 +19,6 @@ namespace API.Controllers
       return await Mediator.Send(new List.Query());
     }
 
-    [Authorize]
     [HttpGet("{id}")]
     public async Task<ActionResult<Activity>> GetActivity(Guid Id)
     {

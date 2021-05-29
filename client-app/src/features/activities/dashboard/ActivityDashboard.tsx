@@ -15,15 +15,18 @@ interface Props {
   openForm: (id?: string) => void;
   closeForm: () => void;
   editOrActivity: (activity: Activity) => void;
+  deleteActivity: (id: string) => void;
 }
 
-const ActivityDashboard = ({activities, selectedActivity, handleSelectedActitvity, handleCancelSelectedActitvity,editMode, openForm, closeForm, editOrActivity}: Props) => {
+const ActivityDashboard = ({activities, selectedActivity, deleteActivity, handleSelectedActitvity, handleCancelSelectedActitvity,editMode, openForm, closeForm, editOrActivity}: Props) => {
   return (
     <Grid>
       <Grid.Column width='10'>
         <List>
             <ActivityList
-              activities={activities} handleSelectedActitvity={handleSelectedActitvity}/>
+              activities={activities}
+              handleSelectedActitvity={handleSelectedActitvity}
+              deleteActivity={deleteActivity}/>
           </List>
       </Grid.Column>
       <GridColumn width='6'>
